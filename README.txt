@@ -1,10 +1,7 @@
-The TabML pipeline effectively gauges the effectiveness of both linear and nonlinear models and automates many common tasks in 
-tabular data ML such as outlier removal, data scaling, feature selection, feature engineering (using SAFE) and hyperparameter 
-optimization. 
+The TabML pipeline effectively gauges the effectiveness of both linear and nonlinear models and automates many common tasks in tabular data ML such as outlier removal, data scaling, feature selection, feature engineering (using SAFE) and hyperparameter optimization. 
 It also avoids data leakage throughout the processes and gauges unbiased model generalizability thanks to the use of nested CV. 
 
-TabML was made with intention for use with small datasets (less than 10000 samples), though if memory and time allows, 
-larger datasets should work just fine.
+TabML was made with intention for use with small datasets (less than 10000 samples), though if memory and time allows, larger datasets should work just fine.
 
 TabML is a streamlined tabular data machine learning 'pipeline' that does the following:
 1. Removes outliers using isolation forest according to specified contamination value
@@ -19,8 +16,7 @@ TabML is a streamlined tabular data machine learning 'pipeline' that does the fo
 10. Trains another interpretable model also using iterative feature selection - called the 'base' model
 
 In the end, 4 models are trained and evaluated: wrapper, surrogate, SAFE, and base.
-All evaluations are done using nested cross-validation, with the inner folds performing hyperparameter optimization using the 
-hyperopt library.
+All evaluations are done using nested cross-validation, with the inner folds performing hyperparameter optimization using the hyperopt library.
 
 
 To recreate the environment in conda, run the following commands
